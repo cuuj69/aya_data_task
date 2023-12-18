@@ -63,7 +63,6 @@ def internal_to_client(internal_data):
         for frame in frames:
             client_frames.append({
                 'entities': frame.get('bounding_box', []),
-                # Add other mappings as needed
             })
 
     client_data = {
@@ -91,7 +90,7 @@ def client_to_internal(client_data):
     for client_frame in frames:
         internal_frame = {
             'bounding_box': client_frame.get('entities', []),
-            # Add other mappings as needed
+    
         }
         internal_annotation = {'frame': [internal_frame]}
         internal_annotations.append(internal_annotation)
