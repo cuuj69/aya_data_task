@@ -1,0 +1,4 @@
+visualize the json file using an online tool: online json viewer
+
+map the schema of the client_format and internal_format.json
+
